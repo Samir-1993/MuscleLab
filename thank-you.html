@@ -42,7 +42,7 @@
                 <div class="main-header">
                     <!-- Nav brand -->
                     <div class="logobox">
-                        <a class="navbar-brand" href="/">
+                        <a class="navbar-brand" href="/MuscleLab/">
                             <img src="images/logo.png" width="184" height="46" alt="Eleganza" title="Eleganza"
                                 srcset="images/logo@2x.png 2x, images/logo@3x.png 3x, images/logo@3x.png 3x">
                         </a>
@@ -70,7 +70,7 @@
                                         <!-- Nav Start -->
                                         <div class="classynav">
                                             <ul>
-                                                <li><a href="/" class="active">Home</a></li>
+                                                <li><a href="/MuscleLab/" class="active">Home</a></li>
                                                 <li><a href="#about">About</a></li>
                                                 <li><a href="#trainers">Trainers</a></li>
                                                 <li><a href="#pricing">Pricing</a></li>
@@ -136,20 +136,6 @@
     <!--Footer End-->
 
 
-    <!--Whatsapp button start-->
-    <!-- <div class="whatsapp-container">
-        <div class="phone-call"><a target="_blank" href="https://wa.me/<%= $g->{whatsapp_no} %>"><img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png" width="50" alt="Order On Whatsapp" title="Order On Whatsapp"></a></div>
-    </div> -->
-    <!--Whatsapp button end-->
-
-    <!--Scroll Top button-->
-    <!-- <a id="backtotop" href="#" class="back-to-top" style="display: inline;">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-    </a> -->
-    <!--Scroll Top button-->
-
-
-
     <!--Javascript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/menu-nav.js"></script>
@@ -163,67 +149,6 @@
                 $('.header').addClass('sticky-header');
             } else {
                 $('.header').removeClass('sticky-header');
-            }
-        });
-        $('.highlight-slider .owl-carousel').owlCarousel({
-            // center: true,
-            items: 1,
-            loop: true,
-            dots: true,
-            margin: 0,
-            responsive: {
-                575: {
-                    items: 1
-                },
-                767: {
-                    items: 2
-                },
-                991: {
-                    items: 3,
-                    mouseDrag: false,
-                    touchDrag: false
-                }
-            }
-        });
-        $('.membership-slider .owl-carousel').owlCarousel({
-            // center: true,
-            items: 1,
-            loop: true,
-            dots: true,
-            margin: 24,
-            responsive: {
-                575: {
-                    items: 1
-                },
-                767: {
-                    items: 2
-                },
-                991: {
-                    items: 3,
-                    mouseDrag: false,
-                    touchDrag: false
-                }
-            }
-        });
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent form from submitting normally
-
-            const fullName = document.getElementById("fullName").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const subject = document.getElementById("subject").value.trim();
-            const message = document.getElementById("message").value.trim();
-
-            const errorMsg = document.getElementById("errorMsg");
-
-            // Basic email pattern
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            if (!fullName || !email || !subject || !message || !emailPattern.test(email)) {
-                errorMsg.style.display = "block";
-            } else {
-                errorMsg.style.display = "none";
-                // Redirect to thank you page
-                window.location.href = "thank-you.html";
             }
         });
     </script>
